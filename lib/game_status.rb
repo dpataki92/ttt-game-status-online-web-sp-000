@@ -29,7 +29,7 @@ def won?(board)
     if yes_or_no == true
       x_won = true
     end
-    
+
   end
 
   if x_won == true || o_won == true
