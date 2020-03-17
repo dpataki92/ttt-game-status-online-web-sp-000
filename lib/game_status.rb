@@ -16,7 +16,7 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  
+
   WIN_COMBINATIONS.each do |win_arr|
 
     x_won = win_arr.all? do |i|
@@ -32,6 +32,6 @@ def won?(board)
     else
       return nil
     end
-    
+
   end
 end 
