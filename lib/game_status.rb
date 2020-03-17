@@ -64,9 +64,11 @@ end
 
 # returns true if the board has been won, is draw, or is full
 def over?(board)
+
   if won?(board) != nil || draw?(board) == true || full?(board) == true
     return true
   else
     return false
   end
+
 end
