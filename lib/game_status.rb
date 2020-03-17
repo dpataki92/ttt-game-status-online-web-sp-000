@@ -43,5 +43,5 @@ end
 
 # returns true if the whole board is full
 def full?(board)
-  board.none? {|el| el != "" || el != " "}
+  board.none? {|el| el == "" || el == " "}
 end
