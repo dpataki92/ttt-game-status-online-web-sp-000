@@ -47,8 +47,9 @@ def full?(board)
 end
 
 
-# returns true if the board is full but the game has not been won,  returns false if the game has not been won and board is not full and if the game is won
+# returns true if the board is full but the game has not been won, returns false if the game has not been won and board is not full and if the game is won
 def draw?(board)
+
   if full?(board) == true
     if won?(board) == nil
       return true
@@ -58,4 +59,5 @@ def draw?(board)
   else
     return false
   end
+  
 end
