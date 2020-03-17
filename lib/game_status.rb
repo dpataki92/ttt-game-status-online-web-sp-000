@@ -15,8 +15,9 @@ WIN_COMBINATIONS = [
   [2,5,8] #right column
 ]
 
+# returns the winning combination or returns false if there is no one
 def won?(board)
-
+  
   WIN_COMBINATIONS.each do |win_arr|
 
     yes_x = win_arr.all? do |i|
@@ -34,9 +35,13 @@ def won?(board)
     if yes_o == true
       return win_arr
     end
-
   end
 
   return nil
+  
+end
 
+# returns true if the whole board is full
+def full?(board)
+  board.none? {|el| el != "" || el != " "}
 end
