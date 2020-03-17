@@ -17,24 +17,26 @@ WIN_COMBINATIONS = [
 
 def won?(board)
 
-  x_won = false
-  o_won = false
-
   WIN_COMBINATIONS.each do |win_arr|
 
-    yes_or_no = win_arr.all? do |i|
+    yes_x = win_arr.all? do |i|
       board[i] == 'X'
     end
 
-    if yes_or_no == true
-      x_won = true
+    if yes_x == true
+      return win_arr
+    end
+
+    yes_o = win_arr.all? do |i|
+      board[i] == 'O'
+    end
+
+    if yes_o == true
+      return win_arr
     end
 
   end
 
-  if x_won == true || o_won == true
-     win_arr
-  else
-     nil
-  end
+  return nil
+  
 end
