@@ -83,5 +83,6 @@ def winner(board)
     elsif winner_arr.include?('O') == true
       return 'O'
     end
+  end
 
 end
