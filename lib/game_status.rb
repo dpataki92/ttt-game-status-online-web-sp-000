@@ -28,9 +28,9 @@ def won?(board)
     end
 
     if x_won == true || o_won == true
-      return win_arr
+       win_arr
     else
-      return nil
+       nil
     end
 
   end
