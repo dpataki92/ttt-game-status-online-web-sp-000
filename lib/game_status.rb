@@ -78,9 +78,9 @@ def winner(board)
 
   if won?(board) != nil
     winner_arr_firstindex = won?(board)[0]
-    if winner_arr_firstindex == "X"
+    if board[winner_arr_firstindex] == "X"
       return "X"
-    elsif winner_arr_firstindex == "O"
+    elsif board[winner_arr_firstindex] == "O"
       return "O"
     end
   end
