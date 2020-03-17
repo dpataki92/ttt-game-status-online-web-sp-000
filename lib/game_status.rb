@@ -80,7 +80,7 @@ def winner(board)
     winner_arr_firstindex = won?(board)[0]
     if winner_arr_firstindex == "X"
       return "X"
-    elsif winner_arr_firstindex = "O"
+    elsif winner_arr_firstindex == "O"
       return "O"
     end
   end
