@@ -14,3 +14,24 @@ WIN_COMBINATIONS = [
   [1,4,7], #middle column
   [2,5,8] #right column
 ]
+
+def won?(board)
+  
+  WIN_COMBINATIONS.each do |win_arr|
+
+    x_won = win_arr.all? do |i|
+      board[i] == 'X'
+    end
+
+    o_won = win_arr.all? do |i|
+      board[i] == 'O'
+    end
+
+    if x_won == true || o_won == true
+      return win_arr
+    else
+      return nil
+    end
+    
+  end
+end 
