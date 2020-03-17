@@ -72,3 +72,16 @@ def over?(board)
   end
 
 end
+
+# returns the winner token
+def winner(board)
+
+  if won?(board) != nil
+    winner_arr = won?(board)
+    if winner_arr.include?('X') == true
+      return 'X'
+    elsif winner_arr.include?('O') == true
+      return 'O'
+    end
+      
+end
